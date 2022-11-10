@@ -71,7 +71,7 @@ class CameraData
 {
 	// Camera Name
     public char[] name;
-    // Camera Boundary
+    // View Matrix
     public float[4][4] view;
     // Projection Matrix
     public float[4][4] projection; 
