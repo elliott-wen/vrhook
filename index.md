@@ -16,7 +16,7 @@ To overcome these challenges, we developed a novel data collection tool, VRhook,
 
 ## Dataset Format
 
-For each game frame, our dataset provides the following types of data.
+For each game frame, our dataset provides the following types of data. (Download a demo dataset.)
 
 1. RGB Image 
 ![RGB](assets/rgb.jpg)
@@ -28,8 +28,8 @@ For each game frame, our dataset provides the following types of data.
 ![Motion Flow](assets/depth3.jpg)
 
 4. Pose Information for VR Headset and Controllers
-```
-struct TrackedDevicePose_t
+```java
+class TrackedDevicePose_t
 {
 	// position in tracker space
 	HmdMatrix34_t mDeviceToAbsoluteTracking; 
@@ -41,9 +41,8 @@ struct TrackedDevicePose_t
 ```
 
 5. Controller Button/Trackpad Events
-```
-/** Holds all the state of a controller at one moment in time. */
-struct VRControllerState
+```java
+class VRControllerState
 {
 	// bit flags for each of the buttons. 
 	uint64_t ulButtonPressed;
@@ -54,8 +53,8 @@ struct VRControllerState
 ```
 
 6. Scene Object Data
-```
-struct ObjectData
+```java
+class ObjectData
 {
 	// Object Name
     public char[] name;
@@ -67,8 +66,8 @@ struct ObjectData
 ``` 
 
 7. Camera Data
-```
-struct CameraData
+```java
+class CameraData
 {
 	// Camera Name
     public char[] name;
@@ -80,8 +79,8 @@ struct CameraData
 ``` 
 
 8. Light Source Data
-```
-struct LightData
+```java
+class LightData
 {
 	// Light Name
     public char[] name;
