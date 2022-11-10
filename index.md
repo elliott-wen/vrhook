@@ -2,7 +2,11 @@
 layout: default
 ---
 
+<img style="float: right;" src="assets/ahlab.png" alt="drawing" width="200"/>
+
+
 # VRHook
+
 
 ## Introduction
 
@@ -89,13 +93,13 @@ struct LightData
 ```
 
 
-## Game Gallery
+## Access to Dataset and Tools
 
-## Access to dataset and tools
-
-To acquire the dataset, please send an email to info@ahlab.org
+To acquire the dataset, please send an email to info@ahlab.org.
 
 ## License & Copyright
+
+To be Added.
 
 ## Publication
 1. E. Wen, Nanayakkara, S., Yao, R., and Lim, J. VRhook: A Data Collection Tool for VR Motion Sickness Research. The ACM Symposium on User Interface Software and Technology 2022.
