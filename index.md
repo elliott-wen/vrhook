@@ -91,6 +91,8 @@ class LightData
 }
 ```
 
+9. User Self Report
+![report](assets/self.png)
 
 ## Access to Dataset and Tools
 
