@@ -25,7 +25,7 @@ For each game frame, our dataset provides the following types of data. (Download
 ![Motion Flow](assets/motion.jpg)
 
 3. Depth Image
-![Motion Flow](assets/depth3.jpg)
+![Depth Image](assets/depth3.jpg)
 
 4. Pose Information for VR Headset and Controllers
 ```java
@@ -94,13 +94,28 @@ class LightData
 9. User Self Report
 ![report](assets/self.png)
 
-## Access to Dataset and Tools
-
-To acquire the dataset, please send an email to info@ahlab.org.
-
 ## License & Copyright
 
-To be Added.
+VRHook does not own the copyright of the games in our datasets. For researchers and educators who wish to use the dataset for non-commercial research and/or educational purposes, we can provide access through our site under the following conditions and terms. 
 
-## Publication
-1. E. Wen, Nanayakkara, S., Yao, R., and Lim, J. VRhook: A Data Collection Tool for VR Motion Sickness Research. The ACM Symposium on User Interface Software and Technology 2022.
+```
+[RESEARCHER_FULLNAME] (the "Researcher") has requested permission to use the VRHook database (the "Database") at National University of Singapore. In exchange for such permission, Researcher hereby agrees to the following terms and conditions:
+
+1. Researcher shall use the Database only for non-commercial research and educational purposes.
+2. National University of Singapore holds no representations or warranties regarding the Database, including but not limited to warranties of non-infringement or fitness for a particular purpose.
+3. Researcher accepts full responsibility for his or her use of the Database and shall defend and indemnify the VRHook team, National University of Singapore, including their employees, Trustees, officers and agents, against any and all claims arising from Researcher's use of the Database, including but not limited to Researcher's use of any copies of copyrighted images/videos that he or she may create from the Database.
+4. Researcher may provide research associates and colleagues with access to the Database provided that they first agree to be bound by these terms and conditions.
+National University of Singapore reserve the right to terminate Researcher's access to the Database at any time.
+If Researcher is employed by a for-profit, commercial entity, Researcher's employer shall also be bound by these terms and conditions, and Researcher hereby represents that he or she is fully authorized to enter into this agreement on behalf of such employer.
+```
+
+## Request Access To Dataset and Tools
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8PsMjxFcNhkHMI3vZ3_kC0rIzSVQu_sI7Mt9wGwzTJt59Ew/viewform?embedded=true" width="100%" height="750px" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
+## Citation:
+The recommend citation for this software is:
+```
+E. Wen, Nanayakkara, S., Yao, R., and Lim, J. VRhook: A Data Collection Tool for VR Motion Sickness Research. The ACM Symposium on User Interface Software and Technology 2022. [DOI](https://dl.acm.org/doi/abs/10.1145/3526113.3545656)
+```
