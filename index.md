@@ -99,23 +99,36 @@ class LightData
 VRHook does not own the copyright of the games in our datasets. For researchers and educators who wish to use the dataset for non-commercial research and/or educational purposes, we can provide access through our site under the following conditions and terms. 
 
 ```
-[RESEARCHER_FULLNAME] (the "Researcher") has requested permission to use the VRHook database (the "Database") at National University of Singapore. In exchange for such permission, Researcher hereby agrees to the following terms and conditions:
+[RESEARCHER_FULLNAME] (the "Researcher") has requested permission to use the VRHook database (the "Database") at The University of Auckland. In exchange for such permission, Researcher hereby agrees to the following terms and conditions:
 
 1. Researcher shall use the Database only for non-commercial research and educational purposes.
-2. National University of Singapore holds no representations or warranties regarding the Database, including but not limited to warranties of non-infringement or fitness for a particular purpose.
-3. Researcher accepts full responsibility for his or her use of the Database and shall defend and indemnify the VRHook team, National University of Singapore, including their employees, Trustees, officers and agents, against any and all claims arising from Researcher's use of the Database, including but not limited to Researcher's use of any copies of copyrighted images/videos that he or she may create from the Database.
-4. Researcher may provide research associates and colleagues with access to the Database provided that they first agree to be bound by these terms and conditions.
-National University of Singapore reserve the right to terminate Researcher's access to the Database at any time.
-If Researcher is employed by a for-profit, commercial entity, Researcher's employer shall also be bound by these terms and conditions, and Researcher hereby represents that he or she is fully authorized to enter into this agreement on behalf of such employer.
+2. The University of Auckland holds no representations or warranties regarding the Database, including but not limited to warranties of non-infringement or fitness for a particular purpose.
+3. Researcher accepts full responsibility for his or her use of the Database and shall defend and indemnify the VRHook team, The University of Auckland, including their employees, Trustees, officers and agents, against any and all claims arising from Researcher's use of the Database, including but not limited to Researcher's use of any copies of copyrighted images/videos that he or she may create from the Database.
+4. Researcher may provide research associates and colleagues with access to the Database provided that they first agree to be bound by these terms and conditions. The University of Auckland reserve the right to terminate Researcher's access to the Database at any time.
+5. If Researcher is employed by a for-profit, commercial entity, Researcher's employer shall also be bound by these terms and conditions, and Researcher hereby represents that he or she is fully authorized to enter into this agreement on behalf of such employer.
 ```
 
 ## Request Access To Dataset and Tools
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8PsMjxFcNhkHMI3vZ3_kC0rIzSVQu_sI7Mt9wGwzTJt59Ew/viewform?embedded=true" width="100%" height="750px" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<form action="https://getform.io/f/6d47b2fe-1839-4f5e-a07a-73c68d0d53a1" method="POST" enctype="multipart/form-data">
+   
+  <label for="name">Your name:</label><br>
+  <input type="text" name="name" value="" required> <br>
+  <label for="email">Your email:</label><br>
+  <input type="text" name="email" value="" required> <br>
+  <label for="description">Short research description:</label><br>
+  <textarea cols="60" rows="5" type="text" name="description" value="" required></textarea><br><br>
+  <label for="name">Please sign the <a href="https://shorturl.at/ADVZ2">form</a> and upload it here:</label>
+  <input type="file" accept=".doc,.docx,.pdf" name="file" required><br>
+  <input type="hidden" name="_gotcha" style="display:none !important"><br>
+  <button type="submit">Submit</button>
+</form>
+
 
 
 ## Citation:
-The recommend citation for this software is:
-```
-E. Wen, Nanayakkara, S., Yao, R., and Lim, J. VRhook: A Data Collection Tool for VR Motion Sickness Research. The ACM Symposium on User Interface Software and Technology 2022. [DOI](https://dl.acm.org/doi/abs/10.1145/3526113.3545656)
-```
+The recommend citation for this software is: 
+
+[```
+E. Wen, Nanayakkara, S., Yao, R., and Lim, J. VRhook: A Data Collection Tool for VR Motion Sickness Research. The ACM Symposium on User Interface Software and Technology 2022. 
+```](https://dl.acm.org/doi/abs/10.1145/3526113.3545656)
