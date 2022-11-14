@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<img style="float: left;" src="assets/logo.png" alt="drawing" width="60"/>
 <img style="float: right;" src="assets/ahlab.png" alt="drawing" width="200"/>
 
 
@@ -10,9 +11,11 @@ layout: default
 
 ## Introduction
 
+<p style="text-align: justify;">
 Despite the increasing popularity of VR games, one factor hindering the industry's rapid growth is motion sickness experienced by the users. Symptoms such as fatigue and nausea severely hamper the user experience.
 Machine Learning methods could be used to automatically detect motion sickness in VR experiences, but generating the extensive labeled dataset needed is a challenging task. It needs either very time consuming manual labeling by human experts or modification of proprietary VR application source codes for label capturing. 
 To overcome these challenges, we developed a novel data collection tool, VRhook, which can collect data from any VR game without needing access to its source code. This is achieved by dynamic hooking, where we can inject custom code into a game's run-time memory to record each video frame and its associated transformation matrices. Using this, we can automatically extract various useful labels such as rotation, speed, and acceleration. In addition, VRhook can blend a customized screen overlay on top of game contents to collect self-reported comfort scores. In this web page, we provide a real-world VR game dataset gathered using VRHook. 
+</p>
 
 ## Dataset Format
 
@@ -94,6 +97,23 @@ class LightData
 9. User Self Report
 ![report](assets/self.png)
 
+## Demo Video
+<p align="center">
+  <iframe
+      width="640"
+      height="480"
+      src="https://www.youtube.com/embed/p83i0GB2z2Q"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+  >
+  </iframe>
+</p>
+
+## Game List (43 in total):
+1. [Athletics.Games.VR](https://store.steampowered.com/app/1029660/Athletics_Games_VR/)
+2. [Baby Hands](https://store.steampowered.com/app/708820/Baby_Hands/)
+...
+
 ## License & Copyright
 
 VRHook does not own the copyright of the games in our datasets. For researchers and educators who wish to use the dataset for non-commercial research and/or educational purposes, we can provide access through our site under the following conditions and terms. 
@@ -125,10 +145,19 @@ VRHook does not own the copyright of the games in our datasets. For researchers 
 </form>
 
 
-
 ## Citation:
 The recommend citation for this software is: 
 
 [```
 E. Wen, Nanayakkara, S., Yao, R., and Lim, J. VRhook: A Data Collection Tool for VR Motion Sickness Research. The ACM Symposium on User Interface Software and Technology 2022. 
 ```](https://dl.acm.org/doi/abs/10.1145/3526113.3545656)
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82644344-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82644344-1');
+</script>
