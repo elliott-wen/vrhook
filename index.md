@@ -137,19 +137,24 @@ VRHook does not own the copyright of the games in our datasets. For researchers 
   <label for="email">Your email:</label><br>
   <input type="text" name="email" value="" required> <br>
   <label for="description">Short research description:</label><br>
-  <textarea cols="60" rows="5" type="text" name="description" value="" required></textarea><br><br>
-  <label for="name">Please sign the <a href="https://shorturl.at/ADVZ2">form</a> and upload it here:</label>
+  <textarea cols="60" rows="5" type="text" name="description" value="" required></textarea><br>
+  <label for="name">Please download/sign this <a href="https://shorturl.at/ADVZ2">form</a> and upload it here:</label>
   <input type="file" accept=".doc,.docx,.pdf" name="file" required><br>
   <input type="hidden" name="_gotcha" style="display:none !important"><br>
   <button type="submit">Submit</button>
 </form>
 
 ## Citation:
-The recommend citation for this software is: 
-
-[```
-E. Wen, Nanayakkara, S., Yao, R., and Lim, J. VRhook: A Data Collection Tool for VR Motion Sickness Research. The ACM Symposium on User Interface Software and Technology 2022. 
-```](https://dl.acm.org/doi/abs/10.1145/3526113.3545656)
+The recommend citation for this software is [https://dl.acm.org/doi/abs/10.1145/3526113.3545656](https://dl.acm.org/doi/abs/10.1145/3526113.3545656): 
+```bibtex
+@inproceedings{wen2022vrhook,
+  title={VRhook: A Data Collection Tool for VR Motion Sickness Research},
+  author={Wen, Elliott and Kaluarachchi, Tharindu Indrajith and Siriwardhana, Shamane and Tang, Vanessa and Billinghurst, Mark and Lindeman, Robert W and Yao, Richard and Lin, James and Nanayakkara, Suranga},
+  booktitle={Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology},
+  pages={1--9},
+  year={2022}
+}
+```
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82644344-1"></script>
