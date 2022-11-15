@@ -138,7 +138,7 @@ VRHook does not own the copyright of the games in our datasets. For researchers 
   <input type="text" name="email" value="" required> <br>
   <label for="description">Short research description:</label><br>
   <textarea cols="60" rows="5" type="text" name="description" value="" required></textarea><br>
-  <label for="name">Please download/sign this <a href="https://shorturl.at/ADVZ2">form</a> and upload it here:</label>
+  <label for="name">Please sign this <a href="https://shorturl.at/ADVZ2">form</a> and upload it here:</label>
   <input type="file" accept=".doc,.docx,.pdf" name="file" required><br>
   <input type="hidden" name="_gotcha" style="display:none !important"><br>
   <button type="submit">Submit</button>
