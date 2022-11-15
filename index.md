@@ -17,6 +17,18 @@ Machine Learning methods could be used to automatically detect motion sickness i
 To overcome these challenges, we developed a novel data collection tool, VRhook, which can collect data from any VR game without needing access to its source code. This is achieved by dynamic hooking, where we can inject custom code into a game's run-time memory to record each video frame and its associated transformation matrices. Using this, we can automatically extract various useful labels such as rotation, speed, and acceleration. In addition, VRhook can blend a customized screen overlay on top of game contents to collect self-reported comfort scores. In this web page, we provide a real-world VR game dataset gathered using VRHook. 
 </p>
 
+## Demo Video
+<p align="center">
+  <iframe
+      width="640"
+      height="480"
+      src="https://www.youtube.com/embed/p83i0GB2z2Q"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+  >
+  </iframe>
+</p>
+
 ## Dataset Format
 
 For each game frame, our dataset provides the following types of data. (Download a demo dataset.)
@@ -97,18 +109,6 @@ class LightData
 9. User Self Report
 ![report](assets/self.png)
 
-## Demo Video
-<p align="center">
-  <iframe
-      width="640"
-      height="480"
-      src="https://www.youtube.com/embed/p83i0GB2z2Q"
-      frameborder="0"
-      allow="autoplay; encrypted-media"
-  >
-  </iframe>
-</p>
-
 ## Game List (43 in total):
 1. [Athletics.Games.VR](https://store.steampowered.com/app/1029660/Athletics_Games_VR/)
 2. [Baby Hands](https://store.steampowered.com/app/708820/Baby_Hands/)
@@ -143,7 +143,6 @@ VRHook does not own the copyright of the games in our datasets. For researchers 
   <input type="hidden" name="_gotcha" style="display:none !important"><br>
   <button type="submit">Submit</button>
 </form>
-
 
 ## Citation:
 The recommend citation for this software is: 
