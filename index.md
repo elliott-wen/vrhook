@@ -36,10 +36,10 @@ For each game frame, our dataset provides the following types of data.
 1. RGB Image for both eyes (JPG format, Same resolution to your VR Goggle)
 ![RGB](assets/rgb.jpg)
 
-2. Motion Flow Image
+2. Motion Flow Image (JPG format. Its resolution has same width to your VR Goggle, but double the height since every motion vector is 2-dimensional).
 ![Motion Flow](assets/motion.jpg)
 
-3. Depth Image from the Main Camera (JPG format, Same resolution to your VR Goggle)
+3. Depth Image from the Main Camera (JPG format. Same resolution to your VR Goggle)
 ![Depth Image](assets/depth3.jpg)
 
 4. Pose Information for VR Headset and Controllers
@@ -106,11 +106,11 @@ class LightData
 }
 ```
 
-9. User Self Report
+9. User Self Report From Microsoft Dial.
 ![report](assets/self.png)
 
 ## Game List (43 in total):
-You can see the full list of games in our dataset [here]().
+You can see the full list of games in our dataset [here](https://docs.google.com/spreadsheets/d/12zwxyRahxCtOeitROCGRJhvpuehsNMrOOzNdVHfva84/edit?usp=sharing).
 
 ## License & Copyright
 
