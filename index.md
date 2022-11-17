@@ -31,27 +31,27 @@ To overcome these challenges, we developed a novel data collection tool, VRhook,
 
 ## Dataset Format
 
-For each game frame, our dataset provides the following types of data. (Download a demo dataset.)
+For each game frame, our dataset provides the following types of data.
 
-1. RGB Image 
+1. RGB Image for both eyes (JPG format, Same resolution to your VR Goggle)
 ![RGB](assets/rgb.jpg)
 
 2. Motion Flow Image
 ![Motion Flow](assets/motion.jpg)
 
-3. Depth Image
+3. Depth Image from the Main Camera (JPG format, Same resolution to your VR Goggle)
 ![Depth Image](assets/depth3.jpg)
 
 4. Pose Information for VR Headset and Controllers
 ```java
-class TrackedDevicePose_t
+class TrackedDevicePose
 {
 	// position in tracker space
-	HmdMatrix34_t mDeviceToAbsoluteTracking; 
+	float[4][4]  mDeviceToAbsoluteTracking; 
 	// velocity in tracker space in m/s
-	HmdVector3_t vVelocity;		
+	float[3]  vVelocity;		
 	// angular velocity in radians/s
-	HmdVector3_t vAngularVelocity;	
+	float[3] vAngularVelocity;	
 };
 ```
 
@@ -110,23 +110,11 @@ class LightData
 ![report](assets/self.png)
 
 ## Game List (43 in total):
-1. [Athletics.Games.VR](https://store.steampowered.com/app/1029660/Athletics_Games_VR/)
-2. [Baby Hands](https://store.steampowered.com/app/708820/Baby_Hands/)
-...
+You can see the full list of games in our dataset [here]().
 
 ## License & Copyright
 
-VRHook does not own the copyright of the games in our datasets. For researchers and educators who wish to use the dataset for non-commercial research and/or educational purposes, we can provide access through our site under the following conditions and terms. 
-
-```
-[RESEARCHER_FULLNAME] (the "Researcher") has requested permission to use the VRHook database (the "Database") at The University of Auckland. In exchange for such permission, Researcher hereby agrees to the following terms and conditions:
-
-1. Researcher shall use the Database only for non-commercial research and educational purposes.
-2. The University of Auckland holds no representations or warranties regarding the Database, including but not limited to warranties of non-infringement or fitness for a particular purpose.
-3. Researcher accepts full responsibility for his or her use of the Database and shall defend and indemnify the VRHook team, The University of Auckland, including their employees, Trustees, officers and agents, against any and all claims arising from Researcher's use of the Database, including but not limited to Researcher's use of any copies of copyrighted images/videos that he or she may create from the Database.
-4. Researcher may provide research associates and colleagues with access to the Database provided that they first agree to be bound by these terms and conditions. The University of Auckland reserve the right to terminate Researcher's access to the Database at any time.
-5. If Researcher is employed by a for-profit, commercial entity, Researcher's employer shall also be bound by these terms and conditions, and Researcher hereby represents that he or she is fully authorized to enter into this agreement on behalf of such employer.
-```
+VRHook does not own the copyright of the games in our datasets. For researchers and educators who wish to use the dataset for non-commercial research and/or educational purposes, we can provide access through our site under this [conditions and terms](https://docs.google.com/document/d/1uMAg4voER3MdSsZKBAkP6PPS6xhcm5kbustfjwEMXXE/edit?usp=sharing). 
 
 ## Request Access To Dataset and Tools
 
@@ -136,16 +124,23 @@ VRHook does not own the copyright of the games in our datasets. For researchers 
   <input type="text" name="name" value="" required> <br>
   <label for="email">Your email:</label><br>
   <input type="text" name="email" value="" required> <br>
+  <label for="email">Your institution:</label><br>
+  <input type="text" name="institution" value="" required> <br>
   <label for="description">Short research description:</label><br>
   <textarea cols="60" rows="5" type="text" name="description" value="" required></textarea><br>
-  <label for="name">Please sign this <a href="https://shorturl.at/ADVZ2">form</a> and upload it here:</label>
+  <label for="name">Please sign this <a href="https://docs.google.com/document/d/1uMAg4voER3MdSsZKBAkP6PPS6xhcm5kbustfjwEMXXE/edit?usp=sharing">form</a> and upload it here:</label>
   <input type="file" accept=".doc,.docx,.pdf" name="file" required><br>
   <input type="hidden" name="_gotcha" style="display:none !important"><br>
   <button type="submit">Submit</button>
 </form>
 
 ## Citation:
-The recommend citation for this software is [https://dl.acm.org/doi/abs/10.1145/3526113.3545656](https://dl.acm.org/doi/abs/10.1145/3526113.3545656): 
+The recommend citation for this system is 
+```
+Wen, E., Kaluarachchi, T. I., Siriwardhana, S., Tang, V., Billinghurst, M., Lindeman, R. W., ... & Nanayakkara, S. (2022, October). VRhook: A Data Collection Tool for VR Motion Sickness Research. In Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology (pp. 1-9) DOI: https://dl.acm.org/doi/abs/10.1145/3526113.3545656.
+```
+
+
 ```bibtex
 @inproceedings{wen2022vrhook,
   title={VRhook: A Data Collection Tool for VR Motion Sickness Research},
