@@ -109,7 +109,14 @@ class LightData
 9. User Self Report From Microsoft Dial.
 ![report](assets/self.png)
 
-## Game List (43 in total):
+## Utility of This Dataset 
+We extract a demo dataset from our full dataset. The input for our demo dataset is one-second videos, while the output label is three binary numbers, indicating whether the camera is fast moving, whether the camera is accelerating/decelerating excessively, and whether the camera is doing multi-axes rotation. Using this dataset, we fine-tuned a slow-fast deep learning network and achieved the following performance. 
+
+![SlowFast](assets/perf.png)
+
+You can download this demo dataset here and submit your results to us. We host a runner board.
+
+## Game List
 You can see the full list of games in our dataset [here](https://docs.google.com/spreadsheets/d/12zwxyRahxCtOeitROCGRJhvpuehsNMrOOzNdVHfva84/edit?usp=sharing).
 
 ## License & Copyright
