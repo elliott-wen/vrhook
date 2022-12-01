@@ -114,7 +114,7 @@ We extract a demo dataset from our full dataset. The input for our demo dataset 
 
 ![SlowFast](assets/perf.png)
 
-You can download this demo dataset here and submit your results to us. We host a runner board.
+You can download this demo dataset [here](https://drive.google.com/drive/u/1/folders/1E_nK_V5X7niBN9k7ujqfMAshpNcY0ZyF) and submit your results to us. We are hosting a runner board and looking forward to a seeing a higher score.
 
 ## Game List
 You can see the full list of games in our dataset [here](https://docs.google.com/spreadsheets/d/12zwxyRahxCtOeitROCGRJhvpuehsNMrOOzNdVHfva84/edit?usp=sharing).
