@@ -14,8 +14,10 @@ layout: default
 <p style="text-align: justify;">
 Despite the increasing popularity of VR games, one factor hindering the industry's rapid growth is motion sickness experienced by the users. Symptoms such as fatigue and nausea severely hamper the user experience.
 Machine Learning methods could be used to automatically detect motion sickness in VR experiences, but generating the extensive labeled dataset needed is a challenging task. It needs either very time consuming manual labeling by human experts or modification of proprietary VR application source codes for label capturing. 
-To overcome these challenges, we developed a novel data collection tool, VRhook, which can collect data from any VR game without needing access to its source code. This is achieved by dynamic hooking, where we can inject custom code into a game's run-time memory to record each video frame and its associated transformation matrices. Using this, we can automatically extract various useful labels such as rotation, speed, and acceleration. In addition, VRhook can blend a customized screen overlay on top of game contents to collect self-reported comfort scores. In this web page, we provide a real-world VR game dataset gathered using VRHook. 
+To overcome these challenges, we developed a novel data collection tool, VRhook, which can collect data from any VR game without needing access to its source code. This is achieved by dynamic hooking, where we can inject custom code into a game's run-time memory to record each video frame and its associated transformation matrices. Using this, we can automatically extract various useful labels such as rotation, speed, and acceleration. In addition, VRhook can blend a customized screen overlay on top of game contents to collect self-reported comfort scores. In this web page, we provide a real-world VR game dataset named VR.net gathered using VRHook. The current dataset offers approximately 12-hour gameplay videos from ten real-world games in 10 diverse genres. We continuously expand VR.net12
+and envision its next version offering 10X more data than the current form.
 </p>
+
 
 ## Demo Video
 <p align="center">
@@ -28,6 +30,12 @@ To overcome these challenges, we developed a novel data collection tool, VRhook,
   >
   </iframe>
 </p>
+
+
+
+## Access To Dataset
+You can download the current version of VR.net via this [link](/dataset). By downloading this dataset, you agree to our [conditions and terms](/policy). 
+
 
 ## Dataset Format
 
@@ -106,40 +114,22 @@ class LightData
 }
 ```
 
-9. User Self Report From Microsoft Dial.
+9. User Self Report From Microsoft Dial or Voice Commands.
 ![report](assets/self.png)
 
+For more detailed information, please refer to our [Data Card](/report).
+
+
+
 ## Utility of This Dataset 
-We extract a demo dataset from our full dataset. The input for our demo dataset is one-second videos, while the output label is three binary numbers, indicating whether the camera is fast moving, whether the camera is accelerating/decelerating excessively, and whether the camera is doing multi-axes rotation. Using this dataset, we fine-tuned a slow-fast deep learning network and achieved the following performance. 
+We extract a demo dataset from our full dataset. The input for our demo dataset is one-second videos, while the output label is three binary numbers, indicating whether the camera is fast moving, whether the camera is accelerating/decelerating excessively, and whether the camera is doing multi-axes rotation. Using this dataset, we fine-tuned a slow-fast deep learning network and achieved the following performance. You can download this pre-processed training dataset [here](https://drive.google.com/drive/u/1/folders/1E_nK_V5X7niBN9k7ujqfMAshpNcY0ZyF). 
 
 ![SlowFast](assets/perf.png)
 
-You can download this demo dataset [here](https://drive.google.com/drive/u/1/folders/1E_nK_V5X7niBN9k7ujqfMAshpNcY0ZyF) and submit your results to us. We are hosting a runner board and looking forward to a seeing a higher score.
 
-## Game List
-You can see the full list of games in our dataset [here](https://docs.google.com/spreadsheets/d/12zwxyRahxCtOeitROCGRJhvpuehsNMrOOzNdVHfva84/edit?usp=sharing).
 
-## License & Copyright
 
-VRHook does not own the copyright of the games in our datasets. For researchers and educators who wish to use the dataset for non-commercial research and/or educational purposes, we can provide access through our site under this [conditions and terms](https://docs.google.com/document/d/1uMAg4voER3MdSsZKBAkP6PPS6xhcm5kbustfjwEMXXE/edit?usp=sharing). 
 
-## Request Access To Dataset and Tools
-
-<form action="https://getform.io/f/6d47b2fe-1839-4f5e-a07a-73c68d0d53a1" method="POST" enctype="multipart/form-data">
-   
-  <label for="name">Your name:</label><br>
-  <input type="text" name="name" value="" required> <br>
-  <label for="email">Your email:</label><br>
-  <input type="text" name="email" value="" required> <br>
-  <label for="email">Your institution:</label><br>
-  <input type="text" name="institution" value="" required> <br>
-  <label for="description">Short research description:</label><br>
-  <textarea cols="60" rows="5" type="text" name="description" value="" required></textarea><br>
-  <label for="name">Please sign this <a href="https://docs.google.com/document/d/1uMAg4voER3MdSsZKBAkP6PPS6xhcm5kbustfjwEMXXE/edit?usp=sharing">form</a> and upload it here:</label>
-  <input type="file" accept=".doc,.docx,.pdf" name="file" required><br>
-  <input type="hidden" name="_gotcha" style="display:none !important"><br>
-  <button type="submit">Submit</button>
-</form>
 
 ## Citation:
 The recommend citation for this system is 
