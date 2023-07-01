@@ -31,11 +31,9 @@ and envision its next version offering 10X more data than the current form.
   </iframe>
 </p>
 
-
-
-## Access To Dataset
-You can download the current version of VR.net via this [link](/dataset). By downloading this dataset, you agree to our [conditions and terms](/policy). 
-
+## Access To Dataset && License
+You can download the current version of VR.net via this [link](/dataset). By downloading this dataset, you agree to our [conditions and terms](/policy) and the CC-BY-NC-SA license. 
+Specifically, the material can be freely shared, redistributed, transformed, built upon and adapted for any purpose, but not for any commercial use. Anyone using the material must provide credit to the original authors and indicate any changes that were made. Anyone sharing the work or a derivative of it must do under the same license terms as it was originally shared. This prevents a derivative version being released under a more open licence that would allow commercial use.
 
 ## Dataset Format
 
