@@ -28,7 +28,7 @@ Despite the increasing popularity of VR games, one factor hindering the industry
   </iframe>
 </p>
 
-## Access to the tool.
+## Tool Access
 We provide beta access to our tool upon email request (elliott@ahlab.org). The current tool works for VR games built atop Unity and Unreal Engines running in Windows and Oculus. 
 Please send an authentic copy of the VR game to us. We will bundle and setup the VRHook tool for you. 
 We are also working on a web portal system to automate this process.
